@@ -10,7 +10,7 @@
 
 	<groupId>com.springGuru</groupId>
 	<artifactId>sfg-pet-clinic</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.3</version>
 
 	<packaging>pom</packaging>
 
@@ -61,6 +61,6 @@
 		<url>https://github.com/shubham122334/sfg-mypet-clinic</url>
 		<developerConnection>scm:git:https://github.com/shubham122334/sfg-mypet-clinic.git</developerConnection>
 		<connection>scm:git:ssh://git@github.com/shubham122334/sfg-mypet-clinic.git</connection>
-		<tag>HEAD</tag>
+		<tag>sfg-pet-clinic-0.0.3</tag>
 	</scm>
 </project>
