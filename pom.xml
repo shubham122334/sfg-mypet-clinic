@@ -10,7 +10,7 @@
 
 	<groupId>com.springGuru</groupId>
 	<artifactId>sfg-pet-clinic</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 
 	<packaging>pom</packaging>
 
@@ -53,13 +53,18 @@
 				<configuration>
 					<goals>install</goals>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
+					<checkModificationExcludes>
+						<checkModificationExclude>pom.xml</checkModificationExclude>
+					</checkModificationExcludes>
 				</configuration>
 
 			</plugin>
 		</plugins>
 	</build>
 	<scm>
+		<url>https://github.com/shubham122334/sfg-mypet-clinic</url>
 		<developerConnection>scm:git:https://github.com/shubham122334/sfg-mypet-clinic.git</developerConnection>
-	<tag>sfg-pet-clinic-0.0.1</tag>
+		<connection>scm:git:ssh://git@github.com/shubham122334/sfg-mypet-clinic.git</connection>
+		<tag>sfg-pet-clinic-0.0.1</tag>
 	</scm>
 </project>
