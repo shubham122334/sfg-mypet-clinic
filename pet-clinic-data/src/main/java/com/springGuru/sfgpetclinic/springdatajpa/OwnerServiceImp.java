@@ -50,6 +50,7 @@ public class OwnerServiceImp implements OwnerService {
 
     @Override
     public Owner findByLastName(String lastName) {
-        return null;
+
+        return ownerRepository.findByLastName(lastName).stream().findFirst().orElse(null);
     }
 }
