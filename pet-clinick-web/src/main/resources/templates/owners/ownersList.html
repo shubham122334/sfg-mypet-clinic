@@ -24,7 +24,12 @@
               <td th:text="${owner.address}"/>
               <td th:text="${owner.city}"/>
               <td th:text="${owner.telephone}"/>
-              <td><span th:each="pet : ${owner.pets}" th:text="${pet.name} "/></td>
+              <td>
+                  <span  th:each="pet,stat : ${owner.pets}" >
+                        <span th:text="${pet.name}"></span>
+                         <span th:if="${!stat.last}">,</span>
+                 </span>
+              </td>
           </tr>
         </tbody>
     </table>
