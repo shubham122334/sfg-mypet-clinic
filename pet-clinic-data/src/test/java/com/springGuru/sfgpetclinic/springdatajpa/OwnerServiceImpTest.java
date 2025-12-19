@@ -2,20 +2,15 @@ package com.springGuru.sfgpetclinic.springdatajpa;
 
 import com.springGuru.sfgpetclinic.model.Owner;
 import com.springGuru.sfgpetclinic.repositories.OwnerRepository;
-import com.springGuru.sfgpetclinic.service.OwnerService;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -31,6 +26,7 @@ class OwnerServiceImpTest {
     OwnerServiceImp ownerServiceImp;
 
     Owner returnOwner;
+
     @BeforeEach
     void setUp(){
         returnOwner = Owner.builder().id(1L).lastName("prajapati").build();
@@ -38,7 +34,7 @@ class OwnerServiceImpTest {
 
     @Test
     void findAll() {
-        Set<Owner> owners = new HashSet<>();
+        List<Owner> owners = new LinkedList<>();
         owners.add(Owner.builder().id(1L).build());
         owners.add(Owner.builder().id(2L).build());
 
