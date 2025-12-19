@@ -12,11 +12,11 @@ class PetServiceMapTest {
 
 
     PetServiceMap petServiceMap;
-    private final Long petId = 1L;
 
     @BeforeEach
     void setUp() {
         petServiceMap = new PetServiceMap();
+        Long petId = 1L;
         petServiceMap.save(Pet.builder().id(petId).build());
     }
 
